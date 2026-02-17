@@ -18,8 +18,8 @@
   </head>
   <body>
     <!-- Navbar Start -->
-    <nav class="w-10/12 mx-auto">
-      <div class="navbar bg-base-100 shadow-sm">
+    <nav class="shadow-sm">
+      <div class="navbar bg-base-100 w-10/12 mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -174,9 +174,8 @@
           <h2 class="font-bold text-3xl mb-5">Trending Now</h2>
 
           <div id="tp-container" class="grid md:grid-cols-3 gap-6">
-           
             <!-- product card for loop -->
-             
+
             <!-- <div class="card bg-base-100 shadow-xl">
               <figure class="h-60">
                 <img
@@ -206,19 +205,40 @@
                 </div>
               </div>
             </div> -->
-
           </div>
         </div>
       </section>
       <!-- Trending Products End -->
+
+      <!-- Open the modal using ID.showModal() method -->
+      <!-- <button class="btn" onclick="my_modal_1.showModal()" >open modal</button> -->
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <!-- products details -->
+          <div id="modal_body">
+            <!-- data will be added here -->
+          </div>
+          <div class="modal-action">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
     </main>
 
     <footer class="bg-slate-800 text-white py-10 mt-20">
       <div class="w-10/12 mx-auto">
-        <div class="grid md:grid-cols-4">
+        <div class="grid md:grid-cols-4 gap-4">
           <!-- Logo and short description -->
           <div class="">
-            <h2 class="text-2xl font-bold mb-4 text-blue-300">SwiftCraft</h2>
+            <a
+              href="index.html"
+              class="text-2xl font-bold mb-4 inline-block text-blue-400"
+            >
+              SwiftCraft
+            </a>
             <p>
               SwiftCraft is your go-to destination for unique, handcrafted
               products that blend creativity and quality. Explore our collection
@@ -227,7 +247,7 @@
           </div>
 
           <!-- Quick links -->
-          <div class="w-10/12 mx-auto">
+          <div class="">
             <h2 class="text-xl font-bold mb-4">Quick Links</h2>
             <ul>
               <li>
@@ -246,7 +266,7 @@
           </div>
 
           <!-- Support Links -->
-          <div class="w-10/12 mx-auto">
+          <div class="">
             <h2 class="text-xl font-bold mb-4">Support</h2>
             <ul>
               <li>
@@ -265,7 +285,7 @@
           </div>
 
           <!-- Newsletter -->
-          <div class="w-10/12 mx-auto">
+          <div class="">
             <h2 class="text-xl font-bold mb-4">Newsletter</h2>
             <p class="mb-2">
               Subscribe to our newsletter to get the latest updates and offers.
